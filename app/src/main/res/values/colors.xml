@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- InitActivity-->
+    <!-- init_top-->
+    <color name="color_init_title">#E8C72A</color>
+    <!-- 登录界面 颜色-->
+    <color name="color_login_text">#C9C9C9</color>
+    <color name="color_login_edit_hint">#C9C9C9</color>
+</resources>

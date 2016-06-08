@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#7B8385"
+                android:orientation="vertical">
+
+    <include layout="@layout/init_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <include layout="@layout/init_login_register_middle"/>
+
+        <TextView
+            style="@style/style_login_text"
+            android:layout_marginTop="8dp"
+            android:text="@string/register_text_phonenum"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/login_edit_text_marginTop"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_edittext_selector">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_text_prompt"
+                    android:paddingBottom="@dimen/login_edit_text_paddingBottom"
+                    android:textSize="@dimen/login_edit_text_size"
+                    android:textColor="@android:color/white"
+                    />
+
+                <EditText
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:textColorHint="@color/color_login_edit_hint"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_edittext_selector"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textCursorDrawable="@drawable/bg_cursor"
+                    android:inputType="number"
+                    android:textSize="@dimen/login_edit_text_size"
+                    android:paddingBottom="@dimen/login_edit_text_paddingBottom"
+                    android:hint="@string/register_edittext_phonenum"
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="14sp"
+                android:background="@android:color/white"
+                android:text="@string/register_btn_send_captcha"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/style_login_text"
+            android:layout_marginTop="8dp"
+            android:text="@string/register_text_captcha"
+            />
+
+        <EditText
+            style="@style/style_login_edittext"
+            android:layout_marginTop="@dimen/login_edit_text_marginTop"
+            android:hint="@string/register_edittext_send_captcha"
+            android:paddingBottom="@dimen/login_edit_text_paddingBottom"
+
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="#E8C828"
+            android:text="@string/init_btn_register"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

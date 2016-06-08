@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/init_linearlayout_marginbottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/fm_init_btn_login"
+                style="@style/style_init_btn"
+                android:text="@string/init_btn_login"/>
+
+            <Button
+                android:id="@+id/fm_init_btn_register"
+                style="@style/style_init_btn"
+                android:layout_marginLeft="@dimen/init_btn_marginleft"
+                android:text="@string/init_btn_register"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/style_init_text"
+            android:id="@+id/fm_init_text_visitor"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:text="@string/init_text_visitor_login"
+            />
+
+        <TextView
+            style="@style/style_init_text"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/init_text_down_icon"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
