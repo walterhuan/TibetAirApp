@@ -11,26 +11,42 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <!--InitActivity-->
-    <!-- 初始化登录按钮-->
-    <style name="style_init_btn">
-        <item name="android:layout_width">@dimen/init_btn_width</item>
-        <item name="android:layout_height">@dimen/init_btn_height</item>
+    <!-- 中等白黄背景色按钮 初始化界面,-->
+    <style name="style_btn_mid_white_yellow">
+        <item name="android:layout_width">@dimen/dimen_btn_mid_width</item>
+        <item name="android:layout_height">@dimen/dimen_btn_mid_height</item>
+        <item name="android:textSize">@dimen/dimen_text_size_18</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:background">@color/color_white</item>
     </style>
-    <!-- 初始化 游客登录字体-->
-    <style name="style_init_text">
+
+    <!-- 白色 18号字体-->
+    <style name="style_text_white_size_18">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">@dimen/init_text_visitor_size</item>
+        <item name="android:textSize">@dimen/dimen_text_size_18</item>
     </style>
+
+     <!-- common top image-->
+    <style name="style_common_top_imageview">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:minWidth">54dp</item>
+    </style>
+
+
+
+
+
 
     <!-- 登录界面 用户名,密码,忘记密码TextView 字体-->
     <style name="style_login_text">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/color_login_text</item>
-        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:textColor">@color/color_gray_light</item>
+        <item name="android:textSize">@dimen/dimen_text_size_18</item>
     </style>
 
     <!-- 登录界面 用户名 密码 输入框-->
@@ -40,11 +56,56 @@
         <item name="android:background">@drawable/bg_edittext_selector</item>
         <item name="android:singleLine">true</item>
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textColorHint">@color/color_login_edit_hint</item>
+        <item name="android:textColorHint">@color/color_gray_light</item>
         <item name="android:textCursorDrawable">@drawable/bg_cursor</item>
-        <item name="android:textSize">@dimen/login_edit_text_size</item>
+        <item name="android:textSize">@dimen/dimen_text_size_20</item>
     </style>
 
+
+    <!-- MainActivity-->
+    <!-- 底部图片样式-->
+    <style name="style_main_bottom_iv">
+        <item name="android:layout_width">@dimen/main_bottom_iv_width</item>
+        <item name="android:layout_height">@dimen/main_bottom_iv_height</item>
+    </style>
+
+    <!-- item_flt_num-->
+    <style name="style_flt_num_item_tv_time">
+        <item name="android:textSize">@dimen/dimen_text_size_22</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_flt_num_item_tv_land">
+        <item name="android:textSize">@dimen/dimen_text_size_14</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 黄色全屏按钮-->
+    <style name="style_button_fill_yellow">
+        <item name="android:textSize">@dimen/dimen_text_size_18</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#E8C828</item>
+    </style>
+
+
+
+    <!-- activity_filter_flight_num-->
+    <style name="style_filter_subtitle_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/dimen_text_size_18</item>
+    </style>
+
+    <style name="style_dotted_line">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@drawable/dotted_line</item>
+        <item name="android:layerType">software</item>
+    </style>
 
 
 </resources>

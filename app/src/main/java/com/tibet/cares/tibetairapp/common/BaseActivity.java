@@ -1,10 +1,12 @@
 package com.tibet.cares.tibetairapp.common;
 
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
+import com.tibet.cares.tibetairapp.R;
 
 import butterknife.ButterKnife;
 
@@ -24,14 +26,29 @@ public abstract class BaseActivity extends FragmentActivity {
         initData();
     }
 
+    public abstract int getLayoutId();
+
     protected abstract void initView();
 
     protected abstract void initData();
 
-    public abstract int getLayoutId();
+    public void gotoActivity(Class clazz,Bundle bundle,boolean transition){
+        Intent it = new Intent(this,clazz);
+        if (bundle != null){
+            it.putExtra("bundle",bundle);
+        }
+        startActivity(it);
+        if (transition)
+        overridePendingTransition(R.anim.slide_in_bottom,R.anim.slide_out_bottom);
 
+    }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ButterKnife.unbind(this);
 
+    }
 }
 
 

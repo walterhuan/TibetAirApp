@@ -20,6 +20,11 @@ public class InitActivity extends BaseActivity implements InitFragment.InitFmLis
 
 
     @Override
+    public int getLayoutId() {
+        return R.layout.activity_init;
+    }
+
+    @Override
     protected void initView() {
         manager = getSupportFragmentManager();
         transaction = manager.beginTransaction();
@@ -30,11 +35,6 @@ public class InitActivity extends BaseActivity implements InitFragment.InitFmLis
     @Override
     protected void initData() {
 
-    }
-
-    @Override
-    public int getLayoutId() {
-        return R.layout.activity_init;
     }
 
 
@@ -66,8 +66,8 @@ public class InitActivity extends BaseActivity implements InitFragment.InitFmLis
 
                 break;
             case InitFragment.CLICK_VISITOR:
+                gotoActivity(MainActivity.class,null,true);
 
-                System.out.println("sssss");
 
                 break;
 

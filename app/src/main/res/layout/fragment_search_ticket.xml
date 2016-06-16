@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F5F5F5"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="单程"
+            android:textSize="@dimen/dimen_text_size_20"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#999999"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="往返"
+            android:textSize="@dimen/dimen_text_size_20"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/module_round_trip_date"/>
+
+    <include layout="@layout/module_single_way_date"/>
+
+    <include layout="@layout/module_land_pair"/>
+
+    <include layout="@layout/module_people_cabin"/>
+
+    <Button
+        style="@style/style_button_fill_yellow"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_search_ticket"
+        android:text="@string/str_flight_search"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+
+
+</LinearLayout>

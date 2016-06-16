@@ -24,6 +24,7 @@ public class UIUtils {
     }
 
 
-
-
+    public static int getColor(int colorId) {
+        return getContext().getResources().getColor(colorId);
+    }
 }

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_bg_gray"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+
+
+        <TextView
+            style="@style/style_filter_subtitle_textview"
+            android:text="起飞时间"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_gray_light"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/color_gray"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/color_gray_light"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/color_gray_light"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="06:00-12:00"
+                android:textSize="@dimen/dimen_text_size_16"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12:00-18:00"
+                android:textSize="@dimen/dimen_text_size_16"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="18:00-24:00"
+                android:textSize="@dimen/dimen_text_size_16"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/style_filter_subtitle_textview"
+            android:layout_marginTop="15dp"
+            android:text="票价选择"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_gray_rectangle"
+                android:text="从高到低"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:background="@drawable/shape_white_rectangle"
+                android:text="从低到高"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:background="@color/color_white"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:text="航空公司"
+            style="@style/style_filter_subtitle_textview"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_gray_light"
+            />
+
+        <ListView
+            android:scrollbars="none"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_filter_flight_num"
+            android:choiceMode="multipleChoice"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm_filter_flight_num"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        style="@style/style_button_fill_yellow"
+        android:layout_marginTop="20dp"
+        android:text="@string/str_confirm"
+        />
+
+
+</LinearLayout>

@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.FilterFlightNumActivity"/>
+        <activity android:name=".activity.TicketSearchFlightActivity">
+        </activity>
+        <activity android:name=".activity.TicketSearchFlightDetailActivity">
+        </activity>
+        <activity android:name=".activity.TicketDetailActivity">
+        </activity>
     </application>
 
 </manifest>

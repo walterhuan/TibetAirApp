@@ -1,27 +1,39 @@
 <resources>
     <string name="app_name">TibetAirApp</string>
     <string name="err_msg">抱歉，系统出现未知异常，即将退出....</string>
-    
-    
+
+
     <!-- InitActivity-->
-    <string name="init_btn_login">登录</string>
-    <string name="init_btn_register">注册</string>
-    <string name="init_text_visitor_login">游 客 登 录</string>
-    <string name="init_text_down_icon">V</string>
+    <string name="str_login">登录</string>
+    <string name="str_register">注册</string>
+    <string name="str_visitor_login">游 客 登 录</string>
+    <string name="str_down_icon">V</string>
 
     <!-- 登录界面-->
-    <string name="login_text_username">用户名</string>
-    <string name="login_text_password">密码</string>
-    <string name="login_text_forget">忘记密码</string>
-    <string name="login_edittext_username">请输入用户名</string>
-    <string name="login_edittext_password">请输入密码</string>
+    <string name="str_username">用户名</string>
+    <string name="str_password">密码</string>
+    <string name="str_forget_password">忘记密码</string>
+    <string name="str_please_enter_username">请输入用户名</string>
+    <string name="str_please_enter_password">请输入密码</string>
     <!-- 注册界面-->
-    <string name="register_text_phonenum">手机号</string>
-    <string name="register_text_prompt">+86 | </string>
-    <string name="register_edittext_phonenum">输入手机号码</string>
-    <string name="register_text_captcha">验证码</string>
-    <string name="register_btn_send_captcha">发送验证码</string>
-    <string name="register_edittext_send_captcha">请输入验证码</string>
+    <string name="str_phonenum">手机号</string>
+    <string name="str_prompt">+86 | </string>
+    <string name="str_please_enter_phonenum">输入手机号码</string>
+    <string name="str_captcha">验证码</string>
+    <string name="str_send_captcha">发送验证码</string>
+    <string name="str_please_enter_send_captcha">请输入验证码</string>
+
+
+    <!-- MainActivity-->
+    <string name="str_ticket">机票</string>
+    <string name="str_check_in">值机</string>
+    <string name="str_flight">航班</string>
+    <string name="str_mine">我的</string>
+    <string name="str_ticket_title">机票预定</string>
+    <string name="str_flight_search">航班查询</string>
+
+    <!--FilterFlightNumActivity 筛选航空公司界面-->
+    <string name="str_confirm">确认</string>
 
 
 </resources>

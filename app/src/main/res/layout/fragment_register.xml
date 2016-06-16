@@ -5,7 +5,7 @@
                 android:background="#7B8385"
                 android:orientation="vertical">
 
-    <include layout="@layout/init_top"/>
+    <include layout="@layout/common_top"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
         <TextView
             style="@style/style_login_text"
             android:layout_marginTop="8dp"
-            android:text="@string/register_text_phonenum"
+            android:text="@string/str_phonenum"
             />
 
 
@@ -40,25 +40,25 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/register_text_prompt"
+                    android:text="@string/str_prompt"
                     android:paddingBottom="@dimen/login_edit_text_paddingBottom"
-                    android:textSize="@dimen/login_edit_text_size"
+                    android:textSize="@dimen/dimen_text_size_20"
                     android:textColor="@android:color/white"
                     />
 
                 <EditText
                     android:layout_weight="1"
                     android:layout_width="0dp"
-                    android:textColorHint="@color/color_login_edit_hint"
+                    android:textColorHint="@color/color_gray_light"
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_edittext_selector"
                     android:singleLine="true"
                     android:textColor="@android:color/white"
                     android:textCursorDrawable="@drawable/bg_cursor"
                     android:inputType="number"
-                    android:textSize="@dimen/login_edit_text_size"
+                    android:textSize="@dimen/dimen_text_size_20"
                     android:paddingBottom="@dimen/login_edit_text_paddingBottom"
-                    android:hint="@string/register_edittext_phonenum"
+                    android:hint="@string/str_please_enter_phonenum"
                     />
 
             </LinearLayout>
@@ -68,9 +68,9 @@
                 android:layout_width="80dp"
                 android:layout_height="30dp"
                 android:layout_marginBottom="10dp"
-                android:textSize="14sp"
+                android:textSize="@dimen/dimen_text_size_14"
                 android:background="@android:color/white"
-                android:text="@string/register_btn_send_captcha"
+                android:text="@string/str_send_captcha"
                 />
 
         </LinearLayout>
@@ -78,24 +78,22 @@
         <TextView
             style="@style/style_login_text"
             android:layout_marginTop="8dp"
-            android:text="@string/register_text_captcha"
+            android:text="@string/str_captcha"
             />
 
         <EditText
             style="@style/style_login_edittext"
             android:layout_marginTop="@dimen/login_edit_text_marginTop"
-            android:hint="@string/register_edittext_send_captcha"
+            android:hint="@string/str_please_enter_send_captcha"
             android:paddingBottom="@dimen/login_edit_text_paddingBottom"
 
             />
 
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/style_button_fill_yellow"
             android:layout_marginTop="80dp"
-            android:background="#E8C828"
-            android:text="@string/init_btn_register"
+            android:text="@string/str_register"
             />
 
     </LinearLayout>

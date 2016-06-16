@@ -7,26 +7,26 @@
 
     <TextView
         style="@style/style_login_text"
-        android:text="@string/login_text_username"
+        android:text="@string/str_username"
         />
 
     <EditText
         style="@style/style_login_edittext"
         android:layout_marginTop="@dimen/login_edit_text_marginTop"
-        android:hint="@string/login_edittext_username"
+        android:hint="@string/str_please_enter_username"
         android:paddingBottom="@dimen/login_edit_text_paddingBottom"
         />
 
     <TextView
         style="@style/style_login_text"
         android:layout_marginTop="8dp"
-        android:text="@string/login_text_password"
+        android:text="@string/str_password"
         />
 
     <EditText
         style="@style/style_login_edittext"
         android:layout_marginTop="@dimen/login_edit_text_marginTop"
-        android:hint="@string/login_edittext_password"
+        android:hint="@string/str_please_enter_password"
         android:inputType="textPassword"
         android:paddingBottom="@dimen/login_edit_text_paddingBottom"
 

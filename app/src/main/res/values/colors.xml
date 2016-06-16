@@ -5,9 +5,30 @@
     <color name="colorAccent">#FF4081</color>
 
     <!-- InitActivity-->
-    <!-- init_top-->
-    <color name="color_init_title">#E8C72A</color>
+    <!-- common_top-->
+    <color name="color_yellow">#E8C72A</color>
+    <color name="color_transparent">#01000000</color>
+    <color name="color_black">#000000</color>
+
+
+
+
     <!-- 登录界面 颜色-->
-    <color name="color_login_text">#C9C9C9</color>
-    <color name="color_login_edit_hint">#C9C9C9</color>
+    <color name="color_gray_light">#C9C9C9</color>
+
+
+    <!-- MainActivity-->
+    <color name="color_white">#FFFFFF</color>
+
+    <color name="color_blue_light">#DDE5E7</color>
+    <color name="colot_blue">#39AEA8</color>
+    <color name="color_gray">#696661</color>
+
+    <!-- FilterFlightNumActivity-->
+    <color name="color_bg_gray">#F5F5F5</color>
+    <color name="color_bg_gray_deep">#D5DDDF</color>
+    <color name="color_bg_gray_dark">#5B5150</color>
+
+
+
 </resources>
