@@ -10,8 +10,16 @@ import java.util.List;
  * Created by huangxl on 2016/6/16.
  */
 public abstract class MyBaseAdapter<T> extends BaseAdapter {
+    public void setList(List<T> list) {
+        this.list = list;
+    }
+
     public MyBaseAdapter(List<T> list) {
         this.list = list;
+    }
+
+    public List<T> getList() {
+        return list;
     }
 
     private List<T> list;
@@ -31,13 +39,14 @@ public abstract class MyBaseAdapter<T> extends BaseAdapter {
         return position;
     }
 
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         BaseHolder holder = null;
-        if (convertView == null){
+        if (convertView == null) {
             holder = getHolder(parent);
-        }else{
-            holder = (BaseHolder)convertView.getTag();
+        } else {
+            holder = (BaseHolder) convertView.getTag();
         }
 
         holder.setData(list.get(position));

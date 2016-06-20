@@ -18,6 +18,8 @@ import butterknife.OnClick;
 
 /**
  * Created by huangxl on 2016/6/14.
+ *
+ * 筛选页面
  */
 public class FilterFlightNumActivity extends BaseActivity {
 

@@ -18,6 +18,9 @@ import com.tibet.cares.tibetairapp.util.UIUtils;
 import butterknife.Bind;
 import butterknife.OnClick;
 
+/**
+ * 航班查询页面
+ */
 public class TicketSearchFlightActivity extends BaseActivity implements DateChoiceRecyclerAdapter.MyOnItemClickListener,AdapterView.OnItemClickListener{
     @Bind(R.id.common_top_left)
     ImageView commonTopLeft;

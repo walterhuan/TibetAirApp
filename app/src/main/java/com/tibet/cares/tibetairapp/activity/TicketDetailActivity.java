@@ -1,5 +1,6 @@
 package com.tibet.cares.tibetairapp.activity;
 
+import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -13,6 +14,8 @@ import butterknife.Bind;
 import butterknife.OnClick;
 
 public class TicketDetailActivity extends BaseActivity {
+    public static final String TICKET_ITEM_CASE = "TICKET_ITEM_CASE";
+    public static final int CASE_LOOK_PASSENGER = 0;
 
 
     @Bind(R.id.common_top_left)
@@ -41,10 +44,27 @@ public class TicketDetailActivity extends BaseActivity {
     }
 
 
-    int tempI = 0;
+
 
     @OnClick(R.id.imgBtn_add_passenger)
-    public void onClick() {
+    public void onClick(View view) {
+        Bundle bundle = new Bundle();
+        switch (view.getId()){
+            case R.id.imgBtn_add_passenger:
+                bundle.putInt(TICKET_ITEM_CASE, CASE_LOOK_PASSENGER);
+                gotoActivity(TicketCommonActivity.class,bundle,false);
+                break;
+
+        }
+
+
+
+        //addPassenger();
+    }
+
+    int tempI = 0;
+    //增加乘机人
+    private void addPassenger() {
         tempI++;
         final View psgView = View.inflate(this, R.layout.view_passenger_add, null);
         TextView tv_psgName= (TextView)psgView.findViewById(R.id.tv_psgName_view_passenger);
