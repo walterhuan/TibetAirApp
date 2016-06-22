@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/color_bg_gray"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+    >
+    <include layout="@layout/common_top"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="输入优惠券"
+            android:textSize="@dimen/dimen_text_size_16"
+            android:gravity="center_horizontal"
+            />
+        <EditText
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_edittext_around"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            />
+
+        <Button
+            style="@style/style_button_fill_yellow"
+            android:layout_marginTop="25dp"
+            android:text="确认"
+            />
+
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="选中可使用的优惠券"
+            android:textSize="@dimen/dimen_text_size_16"
+            android:gravity="center_horizontal"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

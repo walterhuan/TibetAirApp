@@ -2,7 +2,6 @@ package com.tibet.cares.tibetairapp.adapter;
 
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.tibet.cares.tibetairapp.R;
 import com.tibet.cares.tibetairapp.common.BaseHolder;
@@ -11,14 +10,11 @@ import com.tibet.cares.tibetairapp.entity.PassengerEntity;
 
 import java.util.List;
 
-import butterknife.Bind;
-
 /**
- * Created by huangxl on 2016/6/17.
+ * Created by huangxl on 2016/6/20.
  */
-public class CommonPassengerAdapter extends MyBaseAdapter<PassengerEntity> {
-
-    public CommonPassengerAdapter(List<PassengerEntity> list) {
+public class CommonInsurancePassengerAdapter extends MyBaseAdapter<PassengerEntity>{
+    public CommonInsurancePassengerAdapter(List<PassengerEntity> list) {
         super(list);
     }
 
@@ -28,10 +24,7 @@ public class CommonPassengerAdapter extends MyBaseAdapter<PassengerEntity> {
     }
 
 
-    class MyViewHolder extends BaseHolder<PassengerEntity> {
-
-        @Bind(R.id.id_passengerName_commonPsg)
-        TextView idPassengerNameCommonPsg;
+    class MyViewHolder extends BaseHolder<PassengerEntity>{
 
         public MyViewHolder(ViewGroup parent) {
             super(parent);
@@ -39,16 +32,15 @@ public class CommonPassengerAdapter extends MyBaseAdapter<PassengerEntity> {
 
         @Override
         protected void refreshView() {
-            PassengerEntity psgEntity = getData();
-            idPassengerNameCommonPsg.setText(psgEntity.psgName);
+            PassengerEntity entity = getData();
 
         }
 
         @Override
         public View initRootView(ViewGroup parent) {
-            View inflate = View.inflate(parent.getContext(), R.layout.item_common_passenger, null);
-            return inflate;
+            return View.inflate(parent.getContext(), R.layout.item_insurance_passenger,null);
         }
     }
+
 
 }

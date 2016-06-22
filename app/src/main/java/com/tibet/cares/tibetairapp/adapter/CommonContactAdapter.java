@@ -16,9 +16,9 @@ import butterknife.Bind;
 /**
  * Created by huangxl on 2016/6/17.
  */
-public class CommonPassengerAdapter extends MyBaseAdapter<PassengerEntity> {
+public class CommonContactAdapter extends MyBaseAdapter<PassengerEntity> {
 
-    public CommonPassengerAdapter(List<PassengerEntity> list) {
+    public CommonContactAdapter(List<PassengerEntity> list) {
         super(list);
     }
 
@@ -30,8 +30,8 @@ public class CommonPassengerAdapter extends MyBaseAdapter<PassengerEntity> {
 
     class MyViewHolder extends BaseHolder<PassengerEntity> {
 
-        @Bind(R.id.id_passengerName_commonPsg)
-        TextView idPassengerNameCommonPsg;
+        @Bind(R.id.id_contactName_commonPsg)
+        TextView idPContactNameCommonPsg;
 
         public MyViewHolder(ViewGroup parent) {
             super(parent);
@@ -40,13 +40,13 @@ public class CommonPassengerAdapter extends MyBaseAdapter<PassengerEntity> {
         @Override
         protected void refreshView() {
             PassengerEntity psgEntity = getData();
-            idPassengerNameCommonPsg.setText(psgEntity.psgName);
+            idPContactNameCommonPsg.setText(psgEntity.psgName);
 
         }
 
         @Override
         public View initRootView(ViewGroup parent) {
-            View inflate = View.inflate(parent.getContext(), R.layout.item_common_passenger, null);
+            View inflate = View.inflate(parent.getContext(), R.layout.item_common_contact, null);
             return inflate;
         }
     }

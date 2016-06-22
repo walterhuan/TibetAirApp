@@ -4,6 +4,7 @@
     android:id="@+id/ll_module_round_trip_date"
     android:layout_width="match_parent"
     android:layout_height="50dp"
+    android:background="@drawable/bg_listview"
     android:layout_marginTop="15dp"
     android:orientation="horizontal">
 

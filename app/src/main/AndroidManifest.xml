@@ -26,6 +26,8 @@
         </activity>
         <activity android:name=".activity.TicketCommonActivity">
         </activity>
+        <activity android:name=".activity.MeCommonActivity">
+        </activity>
     </application>
 
 </manifest>
