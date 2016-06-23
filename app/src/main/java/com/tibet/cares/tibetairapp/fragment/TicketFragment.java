@@ -1,5 +1,6 @@
 package com.tibet.cares.tibetairapp.fragment;
 
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -8,6 +9,7 @@ import com.tibet.cares.tibetairapp.R;
 import com.tibet.cares.tibetairapp.activity.TicketSearchFlightActivity;
 import com.tibet.cares.tibetairapp.common.BaseActivity;
 import com.tibet.cares.tibetairapp.common.BaseFragment;
+import com.tibet.cares.tibetairapp.ui.CabinSelectPopup;
 import com.tibet.cares.tibetairapp.util.UIUtils;
 
 import butterknife.Bind;
@@ -43,8 +45,18 @@ public class TicketFragment extends BaseFragment {
     }
 
 
-    @OnClick(R.id.btn_search_ticket)
-    public void onClick() {
-        ((BaseActivity)getActivity()).gotoActivity(TicketSearchFlightActivity.class,null,false);
+    @OnClick({R.id.btn_search_ticket, R.id.ll_cabin_choice})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            //航班查询按钮
+            case R.id.btn_search_ticket:
+                ((BaseActivity) getActivity()).gotoActivity(TicketSearchFlightActivity.class, null, false);
+                break;
+            //舱位选择
+            case R.id.ll_cabin_choice:
+                CabinSelectPopup cabinSelectPopup = new CabinSelectPopup(getActivity());
+                cabinSelectPopup.showPopupWindow();
+                break;
+        }
     }
 }

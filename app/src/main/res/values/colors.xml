@@ -29,6 +29,9 @@
     <color name="color_bg_gray_deep">#D5DDDF</color>
     <color name="color_bg_gray_dark">#5B5150</color>
 
+    <color name="line_bg">#CDCDCD</color>
+    <color name="popup_bg">#8f000000</color>
+
 
 
 </resources>

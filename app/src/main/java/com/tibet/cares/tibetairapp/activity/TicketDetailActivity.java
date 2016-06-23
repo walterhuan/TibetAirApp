@@ -100,6 +100,8 @@ public class TicketDetailActivity extends BaseActivity {
             }
         });
         llPassengerTicketDetial.addView(psgView);
+
+
     }
 
 
