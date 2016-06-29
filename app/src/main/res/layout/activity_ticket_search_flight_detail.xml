@@ -26,9 +26,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:background="@drawable/shape_oval_gray"
-                android:padding="10dp"
-                android:src="@mipmap/ic_launcher"
+                android:background="@mipmap/calendar"
                 />
 
 
@@ -39,14 +37,26 @@
                 android:gravity="center_vertical"
                 android:paddingLeft="20dp"
                 android:text="2016年04月30日   星期六"
+                android:textColor="#444444"
                 android:textSize="@dimen/dimen_text_size_18"
                 />
 
         </LinearLayout>
 
-        <View
-            style="@style/style_dotted_line"
-            android:layout_marginTop="2dp"/>
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:background="@mipmap/yuan"
+            />
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:background="@mipmap/yuan"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,10 +68,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:background="@drawable/shape_oval_blue"
-                android:padding="10dp"
-                android:src="@mipmap/ic_launcher"
+                android:background="@mipmap/hangban_circle"
                 />
 
 
@@ -71,6 +78,7 @@
                 android:gravity="center_vertical"
                 android:paddingLeft="20dp"
                 android:text="西藏航空TV9847"
+                android:textColor="#222222"
                 android:textSize="@dimen/dimen_text_size_22"
                 />
 
@@ -83,24 +91,41 @@
                 />
 
             <TextView
-                style="@style/style_flt_num_item_tv_land"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="5dp"
                 android:text="330"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/dimen_text_size_14"
                 />
 
             <TextView
-                style="@style/style_flt_num_item_tv_land"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="(大)"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/dimen_text_size_14"
                 />
 
 
         </LinearLayout>
 
-        <View
-            style="@style/style_dotted_line"
-            android:layout_marginTop="2dp"/>
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:background="@mipmap/yuan"
+            />
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:background="@mipmap/yuan"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -112,10 +137,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:background="@drawable/shape_oval_red"
-                android:padding="10dp"
-                android:src="@mipmap/ic_launcher"
+                android:background="@mipmap/time"
                 />
 
             <LinearLayout
@@ -127,11 +149,17 @@
                 >
 
                 <TextView
-                    style="@style/style_flt_num_item_tv_time"
-                    android:text="11: 24"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11: 24"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="@dimen/dimen_text_size_22"/>
 
                 <TextView
-                    style="@style/style_flt_num_item_tv_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_text_size_14"
+                    android:textColor="@color/text_color_normal"
                     android:text="贡嘎"/>
 
             </LinearLayout>
@@ -141,7 +169,7 @@
                 android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="40dp"
-                android:src="@mipmap/ic_launcher"
+                android:src="@mipmap/aircraft"
                 />
 
             <LinearLayout
@@ -153,12 +181,18 @@
                 >
 
                 <TextView
-                    style="@style/style_flt_num_item_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_text_size_22"
+                    android:textColor="@color/text_color_normal"
                     android:text="15: 40"
                     />
 
                 <TextView
-                    style="@style/style_flt_num_item_tv_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dimen_text_size_14"
+                    android:textColor="@color/text_color_normal"
                     android:text="成都T2"
                     />
 
@@ -166,9 +200,19 @@
 
         </LinearLayout>
 
-        <View
-            style="@style/style_dotted_line"
-            android:layout_marginTop="2dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:background="@mipmap/yuan"
+            />
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:background="@mipmap/yuan"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -180,10 +224,7 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:background="@drawable/shape_oval_yellow"
-                android:padding="10dp"
-                android:src="@mipmap/ic_launcher"
+                android:background="@mipmap/weather"
                 />
 
             <LinearLayout
@@ -203,17 +244,23 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@mipmap/ic_launcher"
+                        android:src="@mipmap/duoyun"
                         />
+
                     <TextView
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:textSize="@dimen/dimen_text_size_16"
+                        android:textColor="@color/text_color_normal"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:text="贡嘎国际机场"
                         />
+
                     <TextView
                         android:layout_width="0dp"
+                        android:textSize="@dimen/dimen_text_size_16"
+                        android:textColor="@color/text_color_normal"
                         android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:text="多云转晴 2-15C"
@@ -231,18 +278,24 @@
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@mipmap/ic_launcher"
+                        android:src="@mipmap/sun"
                         />
+
                     <TextView
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:textSize="@dimen/dimen_text_size_16"
+                        android:textColor="@color/text_color_normal"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:text="双流国际机场"
                         />
+
                     <TextView
                         android:layout_width="0dp"
                         android:layout_weight="1"
+                        android:textSize="@dimen/dimen_text_size_16"
+                        android:textColor="@color/text_color_normal"
                         android:layout_height="wrap_content"
                         android:text="晴 10-20C"
                         />

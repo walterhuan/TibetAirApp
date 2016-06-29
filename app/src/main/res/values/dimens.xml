@@ -34,8 +34,8 @@
 
     <!-- MainActivity-->
     <!-- 底部图片大小-->
-    <dimen name="main_bottom_iv_width">27dp</dimen>
-    <dimen name="main_bottom_iv_height">27dp</dimen>
+    <dimen name="main_bottom_iv_width">30dp</dimen>
+    <dimen name="main_bottom_iv_height">40dp</dimen>
 
     <!-- FlightNum-->
     <!-- item_flt_num-->

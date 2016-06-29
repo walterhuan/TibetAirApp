@@ -19,6 +19,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_text_size_16"
+            android:textColor="@color/color_bg_gray_dark"
             android:text="中银三星 航空旅行意外保障计划,敬请留意西藏航空官网购买提示."/>
 
         <ListView

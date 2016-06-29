@@ -21,7 +21,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginTop="15dp"
-            android:background="#d5dede"
+            android:background="@drawable/juxing_shangbu"
             android:orientation="vertical"
             android:padding="10dp"
             >
@@ -36,6 +36,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="@color/text_color_dark"
                     android:text="西藏航空/TV 6737"
                     android:textSize="@dimen/dimen_text_size_18"/>
 
@@ -43,12 +44,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="总额: "
+                    android:textColor="@color/text_color_dark"
                     android:textSize="@dimen/dimen_text_size_14"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="#e54746"
                     android:text="¥ 2700"
                     android:textSize="@dimen/dimen_text_size_18"
                     />
@@ -59,12 +62,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:textColor="#aaaaaa"
                 android:text="机型: 321 Y"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#aaaaaa"
                 android:layout_marginTop="5dp"
                 android:text="飞行时间: 02小时20分钟"
                 />
@@ -87,6 +92,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
+                    android:textColor="@color/text_color_dark"
                     android:text="10 : 50"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
@@ -96,6 +102,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
                     android:text="西藏"
+                    android:textColor="@color/text_color_dark"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
 
@@ -113,6 +120,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
+                    android:textColor="#aaaaaa"
                     android:text="04-30/周六"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
@@ -121,6 +129,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
+                    android:textColor="#aaaaaa"
                     android:text="西藏阿里昆莎机场"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
@@ -139,6 +148,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
+                    android:textColor="@color/text_color_dark"
                     android:text="13 : 10"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
@@ -148,6 +158,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
                     android:text="成都"
+                    android:textColor="@color/text_color_dark"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
 
@@ -166,6 +177,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:text="04-30/周六"
+                    android:textColor="#aaaaaa"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
 
@@ -173,6 +185,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="7"
+                    android:textColor="#aaaaaa"
                     android:text="成都双流机场"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
@@ -188,7 +201,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:background="#c7d4d5"
+            android:background="@drawable/juxing_xiabu"
             android:orientation="vertical"
             android:padding="10dp"
             >
@@ -203,6 +216,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="@color/text_color_dark"
                     android:text="成人"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
@@ -211,6 +225,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="¥2050*1"
+                    android:textColor="@color/text_color_dark"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
 
@@ -226,6 +241,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="@color/text_color_dark"
                     android:text="儿童"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
@@ -234,6 +250,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="¥600*1"
+                    android:textColor="@color/text_color_dark"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
 
@@ -249,6 +266,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textColor="@color/text_color_dark"
                     android:text="基建燃油费(成人)"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
@@ -257,6 +275,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="¥50*1"
+                    android:textColor="@color/text_color_dark"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
 
@@ -273,6 +292,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="保险"
+                    android:textColor="@color/text_color_dark"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
 
@@ -280,6 +300,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="¥0"
+                    android:textColor="@color/text_color_dark"
                     android:textSize="@dimen/dimen_text_size_16"
                     />
 
@@ -287,10 +308,14 @@
 
         </LinearLayout>
 
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="15dp"
+            android:textSize="@dimen/dimen_text_size_18"
+            android:textColor="@color/text_color_dark"
             android:text="预定成功!请您在20分钟内完成支付,逾期订单将自动取消.请尽快完成支付!"/>
 
 
@@ -310,16 +335,17 @@
                 />
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:text="网银支付"/>
 
             <CheckBox
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableRight="@drawable/selector_checkbox"
                 android:layout_gravity="center_vertical"/>
 
 

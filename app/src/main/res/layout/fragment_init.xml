@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DADCDC"
+    android:background="@mipmap/initbackground"
     >
 
 
@@ -25,18 +25,22 @@
 
             <Button
                 android:id="@+id/fm_init_btn_login"
-                style="@style/style_btn_mid_white_yellow"
-                android:text="@string/str_login"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/sign_in"
+                />
 
             <Button
                 android:id="@+id/fm_init_btn_register"
-                style="@style/style_btn_mid_white_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/init_btn_marginleft"
-                android:text="@string/str_register"/>
+                android:background="@mipmap/sign_up"/>
 
         </LinearLayout>
 
         <TextView
+            android:layout_marginTop="20dp"
             style="@style/style_text_white_size_18"
             android:padding="5dp"
             android:id="@+id/fm_init_text_visitor"
@@ -45,10 +49,12 @@
             android:text="@string/str_visitor_login"
             />
 
-        <TextView
-            style="@style/style_text_white_size_18"
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@mipmap/arrow_down"
             android:layout_gravity="center_horizontal"
-            android:text="@string/str_down_icon"
             />
 
 

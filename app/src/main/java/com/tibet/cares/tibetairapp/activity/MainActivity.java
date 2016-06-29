@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.tibet.cares.tibetairapp.R;
 import com.tibet.cares.tibetairapp.common.BaseActivity;
@@ -14,7 +13,6 @@ import com.tibet.cares.tibetairapp.fragment.CheckInFragment;
 import com.tibet.cares.tibetairapp.fragment.FlightNumFragment;
 import com.tibet.cares.tibetairapp.fragment.MineFragment;
 import com.tibet.cares.tibetairapp.fragment.TicketFragment;
-import com.tibet.cares.tibetairapp.util.UIUtils;
 
 import butterknife.Bind;
 import butterknife.OnClick;
@@ -26,26 +24,26 @@ public class MainActivity extends BaseActivity {
     FrameLayout content;
     @Bind(R.id.iv_ticket)
     ImageView ivTicket;
-    @Bind(R.id.tv_ticket)
-    TextView tvTicket;
+//    @Bind(R.id.tv_ticket)
+//    TextView tvTicket;
     @Bind(R.id.ll_ticket)
     LinearLayout llTicket;
     @Bind(R.id.iv_check_in)
     ImageView ivCheckIn;
-    @Bind(R.id.tv_check_in)
-    TextView tvCheckIn;
+//    @Bind(R.id.tv_check_in)
+//    TextView tvCheckIn;
     @Bind(R.id.ll_check_in)
     LinearLayout llCheckIn;
     @Bind(R.id.iv_flight_num)
     ImageView ivFlightNum;
-    @Bind(R.id.tv_flight_num)
-    TextView tvFlightNum;
+//    @Bind(R.id.tv_flight_num)
+//    TextView tvFlightNum;
     @Bind(R.id.ll_flight_num)
     LinearLayout llFlightNum;
     @Bind(R.id.iv_mine)
     ImageView ivMine;
-    @Bind(R.id.tv_mine)
-    TextView tvMine;
+//    @Bind(R.id.tv_mine)
+//    TextView tvMine;
     @Bind(R.id.ll_mine)
     LinearLayout llMine;
 
@@ -102,8 +100,8 @@ public class MainActivity extends BaseActivity {
                     ticketFragment = new TicketFragment();
                     ft.add(R.id.main_content,ticketFragment);
                 }
-                ivTicket.setImageResource(R.mipmap.ic_launcher);
-                tvTicket.setTextColor(UIUtils.getColor(R.color.color_yellow));
+                ivTicket.setImageResource(R.mipmap.jipiao_choose);
+//                tvTicket.setTextColor(UIUtils.getColor(R.color.color_yellow));
                 ft.show(ticketFragment);
                 break;
             case 1:
@@ -111,8 +109,8 @@ public class MainActivity extends BaseActivity {
                     checkInFragment = new CheckInFragment();
                     ft.add(R.id.main_content,checkInFragment);
                 }
-                ivCheckIn.setImageResource(R.mipmap.ic_launcher);
-                tvCheckIn.setTextColor(UIUtils.getColor(R.color.color_yellow));
+                ivCheckIn.setImageResource(R.mipmap.zhiji_choose);
+ //               tvCheckIn.setTextColor(UIUtils.getColor(R.color.color_yellow));
                 ft.show(checkInFragment);
                 break;
             case 2:
@@ -120,8 +118,8 @@ public class MainActivity extends BaseActivity {
                     flightNumFragment = new FlightNumFragment();
                     ft.add(R.id.main_content,flightNumFragment);
                 }
-                ivFlightNum.setImageResource(R.mipmap.ic_launcher);
-                tvFlightNum.setTextColor(UIUtils.getColor(R.color.color_yellow));
+                ivFlightNum.setImageResource(R.mipmap.hangban_choose);
+//                tvFlightNum.setTextColor(UIUtils.getColor(R.color.color_yellow));
                 ft.show(flightNumFragment);
                 break;
             case 3:
@@ -129,8 +127,8 @@ public class MainActivity extends BaseActivity {
                     mineFragment = new MineFragment();
                     ft.add(R.id.main_content,mineFragment);
                 }
-                ivMine.setImageResource(R.mipmap.ic_launcher);
-                tvMine.setTextColor(UIUtils.getColor(R.color.color_yellow));
+                ivMine.setImageResource(R.mipmap.wode_choose);
+ //               tvMine.setTextColor(UIUtils.getColor(R.color.color_yellow));
                 ft.show(mineFragment);
                 break;
         }
@@ -143,15 +141,15 @@ public class MainActivity extends BaseActivity {
     //重置
     private void resetTab() {
 
-        ivTicket.setImageResource(R.mipmap.ic_launcher);
-        ivCheckIn.setImageResource(R.mipmap.ic_launcher);
-        ivFlightNum.setImageResource(R.mipmap.ic_launcher);
-        ivMine.setImageResource(R.mipmap.ic_launcher);
+        ivTicket.setImageResource(R.mipmap.jipiao);
+        ivCheckIn.setImageResource(R.mipmap.zhiji);
+        ivFlightNum.setImageResource(R.mipmap.hangban);
+        ivMine.setImageResource(R.mipmap.wode);
 
-        tvTicket.setTextColor(UIUtils.getColor(R.color.color_white));
-        tvCheckIn.setTextColor(UIUtils.getColor(R.color.color_white));
-        tvFlightNum.setTextColor(UIUtils.getColor(R.color.color_white));
-        tvMine.setTextColor(UIUtils.getColor(R.color.color_white));
+//        tvTicket.setTextColor(UIUtils.getColor(R.color.color_white));
+//        tvCheckIn.setTextColor(UIUtils.getColor(R.color.color_white));
+//        tvFlightNum.setTextColor(UIUtils.getColor(R.color.color_white));
+//        tvMine.setTextColor(UIUtils.getColor(R.color.color_white));
 
     }
 

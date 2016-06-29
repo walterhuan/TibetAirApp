@@ -21,13 +21,13 @@
 
 
     <!-- 中等白黄背景色按钮 初始化界面,-->
-    <style name="style_btn_mid_white_yellow">
-        <item name="android:layout_width">@dimen/dimen_btn_mid_width</item>
-        <item name="android:layout_height">@dimen/dimen_btn_mid_height</item>
-        <item name="android:textSize">@dimen/dimen_text_size_18</item>
-        <item name="android:textColor">@color/color_black</item>
-        <item name="android:background">@color/color_white</item>
-    </style>
+    <!--<style name="style_btn_mid_white_yellow">-->
+        <!--<item name="android:layout_width">@dimen/dimen_btn_mid_width</item>-->
+        <!--<item name="android:layout_height">@dimen/dimen_btn_mid_height</item>-->
+        <!--<item name="android:textSize">@dimen/dimen_text_size_18</item>-->
+        <!--<item name="android:textColor">@color/color_black</item>-->
+        <!--<item name="android:background">@color/color_white</item>-->
+    <!--</style>-->
 
     <!-- 白色 18号字体-->
     <style name="style_text_white_size_18">
@@ -40,9 +40,9 @@
      <!-- common top image-->
     <style name="style_common_top_imageview">
         <item name="android:padding">5dp</item>
-        <item name="android:layout_width">35dp</item>
-        <item name="android:layout_height">35dp</item>
-        <item name="android:minWidth">54dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
     </style>
 
 
@@ -81,12 +81,14 @@
     <!-- item_flt_num-->
     <style name="style_flt_num_item_tv_time">
         <item name="android:textSize">@dimen/dimen_text_size_22</item>
+        <item name="android:textColor">@color/text_color_dark</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="style_flt_num_item_tv_land">
         <item name="android:textSize">@dimen/dimen_text_size_14</item>
+        <item name="android:textColor">@color/text_color_light</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
@@ -97,7 +99,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/color_white</item>
-        <item name="android:background">#E8C828</item>
+        <item name="android:background">@drawable/zhuce</item>
     </style>
 
 
@@ -106,6 +108,7 @@
     <style name="style_filter_subtitle_textview">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_color_dark</item>
         <item name="android:textSize">@dimen/dimen_text_size_18</item>
     </style>
 

@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="15dp"
+    android:layout_marginTop="10dp"
     android:background="#D5DDDF"
     android:orientation="vertical"
     android:paddingLeft="20dp"
@@ -18,12 +18,10 @@
 
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
-            android:background="@drawable/shape_oval_with_stroke"
-            android:padding="10dp"
-            android:src="@mipmap/ic_launcher"
+            android:background="@mipmap/qifei"
             />
 
 
@@ -32,6 +30,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical"
+            android:textColor="@color/text_color_dark"
             android:paddingLeft="30dp"
             android:text="西藏"
             android:textSize="@dimen/dimen_text_size_18"
@@ -41,17 +40,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
+            android:textColor="@color/text_color_normal"
             android:text="西藏阿里昆莎机场,中国"
             />
 
     </LinearLayout>
 
-    <View
-        android:layout_width="16dp"
-        android:layout_height="16dp"
-        android:layout_marginLeft="10dp"
-        android:layerType="software"
-        android:background="@drawable/dotted_line"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:background="@mipmap/yuan"
+        />
+    <ImageView
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:background="@mipmap/yuan"
         />
 
     <LinearLayout
@@ -62,12 +68,10 @@
 
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
-            android:background="@drawable/shape_oval_with_stroke"
-            android:padding="10dp"
-            android:src="@mipmap/ic_launcher"
+            android:background="@mipmap/jiangluo"
             />
 
 
@@ -77,6 +81,7 @@
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:paddingLeft="30dp"
+            android:textColor="@color/text_color_dark"
             android:text="成都"
             android:textSize="@dimen/dimen_text_size_18"
             />
@@ -85,6 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
+            android:textColor="@color/text_color_normal"
             android:text="成都双流机场,中国"
             />
 

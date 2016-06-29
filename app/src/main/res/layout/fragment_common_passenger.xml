@@ -17,9 +17,9 @@
         >
 
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/add_circle"
             />
 
         <TextView
@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:text="新增乘机人"
+            android:textColor="#39aea8"
             android:textSize="@dimen/dimen_text_size_18"
             />
         

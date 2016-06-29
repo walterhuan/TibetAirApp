@@ -19,11 +19,18 @@
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:button="@null"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:drawablePadding="10dp"
+                android:textColor="@color/text_color_dark"
+                android:drawableLeft="@drawable/selector_radio"
                 android:text="机场自取"
                 />
 
             <TextView
                 android:layout_width="match_parent"
+                android:textColor="@color/text_color_light"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:text="成都双流机场T1"
@@ -31,17 +38,41 @@
 
 
             <RadioButton
+                android:button="@null"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:drawablePadding="10dp"
+                android:textColor="@color/text_color_dark"
+                android:drawableLeft="@drawable/selector_radio"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="邮寄行程单"
                 />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
                 android:layout_marginLeft="30dp"
-                android:text="韵达快递包邮 | 仅限中国大陆地区, 港澳台地区除外"
+                android:text="韵达快递包邮"
                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_light"
+                android:text="|仅限中国大陆地区, 港澳台地区除外"
+                />
+
+
+        </LinearLayout>
+
+
 
 
 
@@ -54,7 +85,8 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_listview"
         android:orientation="vertical"
-        android:padding="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         >
 
         <LinearLayout
@@ -68,6 +100,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:textColor="@color/text_color_dark"
                 android:gravity="center_vertical"
                 android:text="收  件  人"
                 android:textSize="@dimen/dimen_text_size_18"/>
@@ -94,6 +127,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
+                android:textColor="@color/text_color_dark"
                 android:text="联系电话"
                 android:textSize="@dimen/dimen_text_size_18"/>
 
@@ -119,14 +153,15 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
+                android:textColor="@color/text_color_dark"
                 android:text="省 市 区"
                 android:textSize="@dimen/dimen_text_size_18"/>
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:background="@mipmap/ic_launcher"
+                android:background="@mipmap/arrow_right"
                 />
         </LinearLayout>
 
@@ -140,6 +175,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:textColor="@color/text_color_dark"
                 android:gravity="center_vertical"
                 android:text="详细地址"
                 android:textSize="@dimen/dimen_text_size_18"/>

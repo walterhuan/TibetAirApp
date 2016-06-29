@@ -17,11 +17,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/text_color_dark"
             android:text="西藏航空/TV 6737"
             android:textSize="@dimen/dimen_text_size_18"/>
 
         <TextView
             android:layout_width="0dp"
+            android:textColor="@color/text_color_dark"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="机型: 321 Y"
@@ -34,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:textColor="@color/text_color_normal"
         android:text="历时: 02小时25分钟"
         android:textSize="@dimen/dimen_text_size_16"/>
 
@@ -41,7 +44,7 @@
         android:layout_width="20dp"
         android:layout_height="3dp"
         android:layout_marginTop="10dp"
-        android:background="@color/colot_blue"
+        android:background="@mipmap/rectangle"
         />
 
     <LinearLayout
@@ -60,15 +63,24 @@
             >
 
             <TextView
-                style="@style/style_flt_num_item_tv_land"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_text_size_14"
+                android:textColor="@color/text_color_normal"
                 android:text="04-30/周六"/>
 
             <TextView
-                style="@style/style_flt_num_item_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_text_size_20"
+                android:textColor="@color/text_color_dark"
                 android:text="11: 24"/>
 
             <TextView
-                style="@style/style_flt_num_item_tv_land"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_text_size_14"
+                android:textColor="@color/text_color_normal"
                 android:text="拉萨贡嘎机场"/>
 
         </LinearLayout>
@@ -78,7 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@mipmap/ic_launcher"
+            android:src="@mipmap/aircraft"
             />
 
         <LinearLayout
@@ -90,18 +102,27 @@
             >
 
             <TextView
-                style="@style/style_flt_num_item_tv_land"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_text_size_14"
+                android:textColor="@color/text_color_normal"
                 android:text="04-30/周六"
                 />
 
 
             <TextView
-                style="@style/style_flt_num_item_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_text_size_20"
+                android:textColor="@color/text_color_dark"
                 android:text="15: 40"
                 />
 
             <TextView
-                style="@style/style_flt_num_item_tv_land"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_text_size_14"
+                android:textColor="@color/text_color_normal"
                 android:text="成都双流机场"
                 />
 

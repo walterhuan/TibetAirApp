@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:background="@android:color/white"
         android:orientation="horizontal"
         android:padding="5dp"
@@ -20,6 +20,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:textColor="#222222"
             android:gravity="center"
             android:text="单程"
             android:textSize="@dimen/dimen_text_size_20"
@@ -36,6 +37,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
+            android:textColor="#999999"
             android:text="往返"
             android:textSize="@dimen/dimen_text_size_20"
             />
@@ -54,7 +56,7 @@
         style="@style/style_button_fill_yellow"
         android:layout_marginTop="30dp"
         android:id="@+id/btn_search_ticket"
-        android:text="@string/str_flight_search"
+        android:text="@string/str_ticket_title"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         />

@@ -33,9 +33,9 @@ public class DateChoiceRecyclerAdapter extends RecyclerView.Adapter<DateChoiceRe
     public void onBindViewHolder(MyViewHolder holder, int position) {
         holder.tvDateChoiceDay.setText((position + 1) + "");
         if (selectIndex == position) {
-            holder.llDateChoiceBg.setBackgroundColor(UIUtils.getColor(R.color.color_gray));
+            holder.llDateChoiceBg.setBackgroundColor(UIUtils.getColor(R.color.color_bg_gray_selected));
         }else{
-            holder.llDateChoiceBg.setBackgroundColor(UIUtils.getColor(R.color.color_gray_light));
+            holder.llDateChoiceBg.setBackgroundColor(UIUtils.getColor(R.color.color_bg_gray_unselect));
         }
 
 

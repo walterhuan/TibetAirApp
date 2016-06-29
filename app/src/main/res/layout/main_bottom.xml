@@ -2,7 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="60dp"
-              android:orientation="vertical">
+              android:background="@drawable/bg_title"
+              android:orientation="vertical"
+    >
 
     <View
         android:layout_width="match_parent"
@@ -13,7 +15,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="59dp"
-        android:background="#5B5150"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -27,17 +28,17 @@
 
             <ImageView
                 android:id="@+id/iv_ticket"
-                android:src="@mipmap/ic_launcher"
-                style="@style/style_main_bottom_iv"/>
+                style="@style/style_main_bottom_iv"
+                android:src="@mipmap/jipiao"/>
 
-            <TextView
-                android:id="@+id/tv_ticket"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="机票"
-                android:textColor="@color/color_white"
-                android:textSize="14sp"/>
+            <!--<TextView-->
+            <!--android:id="@+id/tv_ticket"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:text="机票"-->
+            <!--android:textColor="@color/color_white"-->
+            <!--android:textSize="14sp"/>-->
         </LinearLayout>
 
         <LinearLayout
@@ -51,16 +52,16 @@
             <ImageView
                 android:id="@+id/iv_check_in"
                 style="@style/style_main_bottom_iv"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@mipmap/zhiji"/>
 
-            <TextView
-                android:id="@+id/tv_check_in"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="值机"
-                android:textColor="@color/color_white"
-                android:textSize="14sp"/>
+            <!--<TextView-->
+            <!--android:id="@+id/tv_check_in"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:text="值机"-->
+            <!--android:textColor="@color/color_white"-->
+            <!--android:textSize="14sp"/>-->
 
         </LinearLayout>
 
@@ -75,16 +76,16 @@
             <ImageView
                 android:id="@+id/iv_flight_num"
                 style="@style/style_main_bottom_iv"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@mipmap/hangban"/>
 
-            <TextView
-                android:id="@+id/tv_flight_num"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="航班"
-                android:textColor="@color/color_white"
-                android:textSize="14sp"/>
+            <!--<TextView-->
+            <!--android:id="@+id/tv_flight_num"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:text="航班"-->
+            <!--android:textColor="@color/color_white"-->
+            <!--android:textSize="14sp"/>-->
 
         </LinearLayout>
 
@@ -99,16 +100,16 @@
             <ImageView
                 android:id="@+id/iv_mine"
                 style="@style/style_main_bottom_iv"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@mipmap/wode"/>
 
-            <TextView
-                android:id="@+id/tv_mine"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:text="我的"
-                android:textColor="@color/color_white"
-                android:textSize="14sp"/>
+            <!--<TextView-->
+            <!--android:id="@+id/tv_mine"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:text="我的"-->
+            <!--android:textColor="@color/color_white"-->
+            <!--android:textSize="14sp"/>-->
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

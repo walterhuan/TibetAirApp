@@ -19,11 +19,13 @@
             android:orientation="horizontal"
             >
             <TextView
+                android:textColor="@color/text_color_normal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="航班号:"
                 />
             <TextView
+                android:textColor="@color/text_color_normal"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -38,18 +40,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
                 android:text="单    价:"
                 />
             <TextView
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#e54746"
                 android:textSize="@dimen/dimen_text_size_20"
                 android:text="¥ 1440.0"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
                 android:text="/成人(含税费)"
                 />
         </LinearLayout>
@@ -61,35 +66,41 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_normal"
                 android:text="票面价:"
                 />
             <TextView
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
+                android:textColor="@color/text_color_normal"
                 android:layout_height="wrap_content"
                 android:text="¥ 1390"
                 />
             <TextView
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
+                android:textColor="@color/text_color_normal"
                 android:layout_height="wrap_content"
                 android:text="燃油费:"
                 />
             <TextView
 
                 android:layout_width="wrap_content"
+                android:textColor="@color/text_color_normal"
                 android:layout_height="wrap_content"
                 android:text="¥ 0.0"
                 />
             <TextView
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
+                android:textColor="@color/text_color_normal"
                 android:layout_height="wrap_content"
                 android:text="建机费:"
                 />
             <TextView
 
                 android:layout_width="wrap_content"
+                android:textColor="@color/text_color_normal"
                 android:layout_height="wrap_content"
                 android:text="¥ 50.0"
                 />
@@ -103,12 +114,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#39aea8"
                 android:text="退改签:"
                 />
             <TextView
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#39aea8"
                 android:text="改期退票收费"
                 />
         </LinearLayout>
@@ -123,14 +136,20 @@
         android:orientation="vertical"
         android:gravity="center"
         >
-        <ImageView
+        <TextView
+            android:text="预定"
+            android:gravity="center"
+            android:textColor="@color/color_white"
             android:layout_width="40dp"
             android:layout_height="50dp"
-            android:background="@mipmap/ic_launcher"
+            android:background="@mipmap/juxing_yuding"
             />
         <TextView
             android:id="@+id/textV_ticket_count_item_search_detail"
             android:layout_width="wrap_content"
+            android:background="@mipmap/juxing_piao"
+            android:gravity="center"
+            android:textColor="#e54746"
             android:layout_height="wrap_content"
             android:text="5张"
             />

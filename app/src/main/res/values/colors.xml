@@ -6,7 +6,7 @@
 
     <!-- InitActivity-->
     <!-- common_top-->
-    <color name="color_yellow">#E8C72A</color>
+    <color name="color_yellow">#E8C729</color>
     <color name="color_transparent">#01000000</color>
     <color name="color_black">#000000</color>
 
@@ -29,8 +29,19 @@
     <color name="color_bg_gray_deep">#D5DDDF</color>
     <color name="color_bg_gray_dark">#5B5150</color>
 
+
+    <color name="color_bg_gray_unselect">#a9a4a3</color>
+    <color name="color_bg_gray_selected">#5b5250</color>
+
+
     <color name="line_bg">#CDCDCD</color>
     <color name="popup_bg">#8f000000</color>
+
+
+    <color name="text_color_dark">#222222</color>
+    <color name="text_color_normal">#666666</color>
+    <color name="text_color_light">#999999</color>
+
 
 
 

@@ -35,7 +35,7 @@ public class TicketFragment extends BaseFragment {
 
     @Override
     protected void initView() {
-        commonTopTv.setText(UIUtils.getString(R.string.str_flight_search));
+        commonTopTv.setText(UIUtils.getString(R.string.str_ticket_title));
 
     }
 

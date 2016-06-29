@@ -10,16 +10,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|center_vertical"
+        android:button="@null"
+        android:drawableRight="@drawable/selector_checkbox"
         android:clickable="false"
         android:focusable="false"/>
     <!--android:button="@drawable/checkbox_selector"-->
 
     <Button
-        android:layout_width="40dp"
+        android:layout_width="25dp"
         android:focusable="false"
-        android:layout_height="40dp"
+        android:layout_height="25dp"
         android:layout_gravity="center_vertical"
-        android:background="@mipmap/ic_launcher"
+        android:background="@mipmap/amend"
         />
 
     <LinearLayout
@@ -35,12 +37,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/id_contactName_commonPsg"
+            android:textColor="@color/text_color_dark"
             android:text="阿狸"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/text_color_normal"
             android:text="手机号   510102003399004444"
             />
 

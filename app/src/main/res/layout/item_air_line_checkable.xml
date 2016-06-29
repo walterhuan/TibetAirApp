@@ -11,6 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|center_vertical"
+        android:button="@null"
+        android:background="@drawable/selector_checkbox"
         android:clickable="false"
         android:focusable="false"/>
     <!--android:button="@drawable/checkbox_selector"-->
@@ -19,8 +21,9 @@
         android:id="@+id/airline_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text_color_dark"
         android:layout_gravity="center_vertical"
-        android:textSize="@dimen/dimen_text_size_18"/>
+        android:textSize="@dimen/dimen_text_size_16"/>
 
 
 </com.tibet.cares.tibetairapp.ui.CheckableFrameLayout>

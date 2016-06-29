@@ -81,7 +81,7 @@ public class TicketDetailActivity extends BaseActivity {
 
 
 
-        //addPassenger();
+        addPassenger();
     }
 
     int tempI = 0;

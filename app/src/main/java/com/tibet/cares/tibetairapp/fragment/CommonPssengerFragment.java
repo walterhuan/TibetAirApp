@@ -1,5 +1,6 @@
 package com.tibet.cares.tibetairapp.fragment;
 
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -24,8 +25,8 @@ public class CommonPssengerFragment extends BaseFragment {
     ImageView commonTopLeft;
     @Bind(R.id.common_top_tv)
     TextView commonTopTv;
-    @Bind(R.id.common_top_right)
-    ImageView commonTopRight;
+    @Bind(R.id.common_top_right_text)
+    TextView commonTopRightText;
     @Bind(R.id.lv_common_passenger)
     ListView lvCommonPassenger;
 
@@ -42,7 +43,8 @@ public class CommonPssengerFragment extends BaseFragment {
     @Override
     protected void initView() {
         commonTopTv.setText("常用乘机人");
-        commonTopRight.setVisibility(ImageView.VISIBLE);
+        commonTopRightText.setText("完成");
+        commonTopRightText.setVisibility(View.VISIBLE);
         System.out.println("i=" + i);
 
     }

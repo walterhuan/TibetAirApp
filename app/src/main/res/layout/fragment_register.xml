@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#7B8385"
+                android:background="@mipmap/initbackgroundalpha"
                 android:orientation="vertical">
 
     <include layout="@layout/common_top"/>
@@ -69,7 +69,7 @@
                 android:layout_height="30dp"
                 android:layout_marginBottom="10dp"
                 android:textSize="@dimen/dimen_text_size_14"
-                android:background="@android:color/white"
+                android:background="@drawable/fasongyanzhengma"
                 android:text="@string/str_send_captcha"
                 />
 

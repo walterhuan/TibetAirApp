@@ -15,21 +15,23 @@
         >
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:background="@mipmap/ic_launcher"
+            android:background="@mipmap/delete"
             />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_marginLeft="10dp"
             android:gravity="center_vertical"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
+                android:textColor="@color/text_color_normal"
                 android:layout_height="wrap_content"
                 android:text="姓名"
                 android:textSize="@dimen/dimen_text_size_16"
@@ -38,6 +40,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_normal"
                 android:layout_marginTop="3dp"
                 android:text="身份证"
                 android:textSize="@dimen/dimen_text_size_16"
@@ -55,6 +58,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
                 android:text="阿狸"
                 android:id="@+id/tv_psgName_view_passenger"
                 android:textSize="@dimen/dimen_text_size_16"
@@ -64,6 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
+                android:textColor="@color/text_color_dark"
                 android:text="510109000099990009"
                 android:textSize="@dimen/dimen_text_size_16"
                 />
@@ -74,10 +79,10 @@
 
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
             android:layout_gravity="center_vertical"
-            android:background="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/arrow_right"
             />
 
 

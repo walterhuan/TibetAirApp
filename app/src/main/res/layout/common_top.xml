@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@+id/common_ll"
-              xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="46dp"
-              android:background="#5B5150"
-              android:orientation="vertical">
+<LinearLayout
+    android:id="@+id/common_ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/bg_title"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:gravity="center_vertical"
@@ -18,27 +20,37 @@
 
         <ImageView
             android:id="@+id/common_top_left"
+            android:layout_centerVertical="true"
             style="@style/style_common_top_imageview"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@mipmap/left_arrow"/>
 
         <TextView
+
             android:id="@+id/common_top_tv"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:text="@string/str_login"
             android:textColor="@color/color_yellow"
             android:textSize="@dimen/dimen_text_size_22"
             />
 
         <ImageView
-
+            android:layout_alignParentRight="true"
             android:id="@+id/common_top_right"
             style="@style/style_common_top_imageview"
-            android:src="@mipmap/ic_launcher"
-            android:visibility="invisible"/>
+            android:src="@mipmap/screen"
+            android:visibility="gone"/>
 
-    </LinearLayout>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/common_top_right_text"
+            style="@style/style_common_top_imageview"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/dimen_text_size_18"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
 
 </LinearLayout>
