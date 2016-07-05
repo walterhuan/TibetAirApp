@@ -9,6 +9,7 @@ import android.widget.TextView;
 import com.tibet.cares.tibetairapp.R;
 import com.tibet.cares.tibetairapp.common.BaseActivity;
 import com.tibet.cares.tibetairapp.entity.PassengerEntity;
+import com.tibet.cares.tibetairapp.ui.PriceCountPopup;
 
 import butterknife.Bind;
 import butterknife.OnClick;
@@ -32,7 +33,8 @@ public class TicketDetailActivity extends BaseActivity {
     ImageView commonTopRight;
     @Bind(R.id.ll_passenger_ticket_detial)
     LinearLayout llPassengerTicketDetial;
-
+    @Bind(R.id.ll_price_parent)
+    LinearLayout llPriceParent;
     @Override
     public int getLayoutId() {
         return R.layout.activity_ticket_detail;
@@ -46,6 +48,8 @@ public class TicketDetailActivity extends BaseActivity {
 
     @Override
     protected void initData() {
+        //加入乘机人
+        addPassenger();
 
     }
 
@@ -53,35 +57,45 @@ public class TicketDetailActivity extends BaseActivity {
 
 
     @OnClick({R.id.imgBtn_add_passenger,R.id.ll_add_contact,
-            R.id.ll_add_insurance,R.id.ll_route_bill,R.id.ll_coupon,R.id.btn_submit_order})
+            R.id.ll_add_insurance,R.id.ll_route_bill,R.id.ll_coupon,R.id.btn_submit_order,R.id.ll_total_price})
     public void onClick(View view) {
         Bundle bundle = new Bundle();
         switch (view.getId()){
             case R.id.imgBtn_add_passenger:
                 bundle.putInt(TICKET_ITEM_CASE, CASE_LOOK_PASSENGER);
+                gotoActivity(TicketCommonActivity.class, bundle, false);
                 break;
             case R.id.ll_add_contact:
                 bundle.putInt(TICKET_ITEM_CASE, CASE_LOOK_CONTACT);
+                gotoActivity(TicketCommonActivity.class, bundle, false);
                 break;
             case R.id.ll_add_insurance:
                 bundle.putInt(TICKET_ITEM_CASE, CASE_LOOK_INSURANCE);
+                gotoActivity(TicketCommonActivity.class, bundle, false);
                 break;
             case R.id.ll_route_bill:
                 bundle.putInt(TICKET_ITEM_CASE, CASE_LOOK_ROUTE_BILL);
+                gotoActivity(TicketCommonActivity.class, bundle, false);
                 break;
             case R.id.ll_coupon:
                 bundle.putInt(TICKET_ITEM_CASE, CASE_LOOK_COUPON);
+                gotoActivity(TicketCommonActivity.class, bundle, false);
                 break;
             case R.id.btn_submit_order:
                 bundle.putInt(TICKET_ITEM_CASE, CASE_LOOK_SUBMIT_ORDER);
+                gotoActivity(TicketCommonActivity.class, bundle, false);
+                break;
+            case R.id.ll_total_price:
+                PriceCountPopup pricePopup = new PriceCountPopup(this);
+                pricePopup.showPopupWindow();
                 break;
 
         }
-        gotoActivity(TicketCommonActivity.class,bundle,false);
 
 
 
-        addPassenger();
+
+
     }
 
     int tempI = 0;

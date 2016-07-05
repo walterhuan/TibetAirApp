@@ -10,6 +10,7 @@ import com.tibet.cares.tibetairapp.activity.TicketSearchFlightActivity;
 import com.tibet.cares.tibetairapp.common.BaseActivity;
 import com.tibet.cares.tibetairapp.common.BaseFragment;
 import com.tibet.cares.tibetairapp.ui.CabinSelectPopup;
+import com.tibet.cares.tibetairapp.ui.PeopleCountPopup;
 import com.tibet.cares.tibetairapp.util.UIUtils;
 
 import butterknife.Bind;
@@ -45,7 +46,7 @@ public class TicketFragment extends BaseFragment {
     }
 
 
-    @OnClick({R.id.btn_search_ticket, R.id.ll_cabin_choice})
+    @OnClick({R.id.btn_search_ticket, R.id.ll_cabin_choice,R.id.ll_people_count})
     public void onClick(View view) {
         switch (view.getId()) {
             //航班查询按钮
@@ -56,6 +57,12 @@ public class TicketFragment extends BaseFragment {
             case R.id.ll_cabin_choice:
                 CabinSelectPopup cabinSelectPopup = new CabinSelectPopup(getActivity());
                 cabinSelectPopup.showPopupWindow();
+                break;
+            //人数选择
+            case R.id.ll_people_count:
+
+                PeopleCountPopup peopleCountPopup = new PeopleCountPopup(getActivity());
+                peopleCountPopup.showPopupWindow();
                 break;
         }
     }

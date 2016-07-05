@@ -38,6 +38,7 @@
         <ImageView
             android:layout_alignParentRight="true"
             android:id="@+id/common_top_right"
+            android:layout_centerVertical="true"
             style="@style/style_common_top_imageview"
             android:src="@mipmap/screen"
             android:visibility="gone"/>

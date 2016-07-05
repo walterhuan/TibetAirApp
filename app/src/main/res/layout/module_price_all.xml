@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:id="@+id/ll_price_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@mipmap/juxing_shense"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/ll_total_price"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总价:"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/dimen_text_size_20"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="¥2700"
+            android:textColor="@color/color_yellow"
+            android:textSize="@dimen/dimen_text_size_20"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/up_arrow"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="end|center_vertical"
+        >
+
+        <Button
+            android:id="@+id/btn_submit_order"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:background="@mipmap/juxing_huangse"
+            android:text="提交订单"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/dimen_text_size_20"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

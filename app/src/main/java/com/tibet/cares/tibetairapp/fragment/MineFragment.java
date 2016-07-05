@@ -44,6 +44,9 @@ public class MineFragment extends BaseFragment {
     @Bind(R.id.common_ll)
     LinearLayout commonLl;
 
+
+
+
     @Override
     public int getLayoutId() {
         return R.layout.fragment_mine;
@@ -62,14 +65,14 @@ public class MineFragment extends BaseFragment {
 
 
 
-    @OnClick({R.id.ll_personal_modify,R.id.imgBtn_Propose_Paying,R.id.ll_return_ticket_query,R.id.ll_setting})
+    @OnClick({R.id.ll_personal_modify,R.id.ll_Propose_Paying,R.id.ll_return_ticket_query,R.id.ll_setting})
     public void onClick(View view) {
         Bundle bundle = new Bundle();
         switch (view.getId()){
             case R.id.ll_personal_modify:
                 bundle.putInt(MINE_ITEM_CASE,CASE_PERSONAL_MODIFY);
                 break;
-            case R.id.imgBtn_Propose_Paying:
+            case R.id.ll_Propose_Paying:
                 bundle.putInt(MINE_ITEM_CASE,CASE_MY_ORDER);
                 bundle.putInt(MY_ORDER_CASE,CASE_PROPOSE_PAYING);
                 break;

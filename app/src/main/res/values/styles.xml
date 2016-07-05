@@ -95,7 +95,7 @@
 
     <!-- 黄色全屏按钮-->
     <style name="style_button_fill_yellow">
-        <item name="android:textSize">@dimen/dimen_text_size_18</item>
+        <item name="android:textSize">@dimen/dimen_text_size_20</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/color_white</item>

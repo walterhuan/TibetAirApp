@@ -23,7 +23,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="45dp"
                 android:gravity="center"
                 android:textColor="@color/text_color_dark"
                 android:text="舱位"
@@ -146,7 +146,8 @@
                android:textColor="@color/text_color_dark"
                android:textSize="@dimen/dimen_text_size_18"
                android:gravity="center"
-               android:padding="10dp"
+               android:paddingTop="10dp"
+               android:paddingBottom="10dp"
                />
 
         </LinearLayout>

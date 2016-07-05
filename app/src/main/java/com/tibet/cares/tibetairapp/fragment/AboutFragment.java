@@ -1,11 +1,14 @@
 package com.tibet.cares.tibetairapp.fragment;
 
+import android.view.View;
 import android.widget.TextView;
 
 import com.tibet.cares.tibetairapp.R;
 import com.tibet.cares.tibetairapp.common.BaseFragment;
+import com.tibet.cares.tibetairapp.ui.SharePopup;
 
 import butterknife.Bind;
+import butterknife.OnClick;
 
 /**
  * Created by huangxl on 2016/6/22.
@@ -30,4 +33,17 @@ public class AboutFragment extends BaseFragment {
 
     }
 
+
+
+    @OnClick({R.id.btn_share})
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.btn_share:
+                SharePopup sharePopup = new SharePopup(getActivity());
+                sharePopup.showPopupWindow();
+                break;
+
+
+        }
+    }
 }

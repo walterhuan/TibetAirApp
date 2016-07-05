@@ -23,12 +23,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="修改密码"
+            android:textColor="@color/text_color_dark"
             android:textSize="@dimen/dimen_text_size_16"/>
 
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right"
             />
 
     </LinearLayout>
@@ -40,7 +41,8 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_listview"
         android:orientation="vertical"
-        android:padding="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         >
 
         <LinearLayout
@@ -56,6 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="联系客服"
+                android:textColor="@color/text_color_dark"
                 android:textSize="@dimen/dimen_text_size_16"/>
 
 
@@ -70,11 +73,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4008-0099-00"
+                    android:textSize="@dimen/dimen_text_size_16"
+                    android:textColor="@color/text_color_dark"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_light"
                     android:text="服务时间07:00-21:00"
                     />
 
@@ -95,12 +101,13 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="关于"
+                android:textColor="@color/text_color_dark"
                 android:textSize="@dimen/dimen_text_size_16"/>
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow_right"
                 />
 
 

@@ -45,12 +45,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textSize="@dimen/dimen_text_size_16"
+                        android:textColor="@color/text_color_light"
                         android:text="订单状态"
                         />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:textSize="@dimen/dimen_text_size_16"
+                        android:textColor="@color/text_color_dark"
                         android:layout_marginLeft="10dp"
                         android:layout_weight="1"
                         android:text="待支付"
@@ -67,6 +71,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textSize="@dimen/dimen_text_size_16"
+                        android:textColor="@color/text_color_light"
                         android:text="订单总价"
                         />
 
@@ -74,6 +80,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/dimen_text_size_16"
+                        android:textColor="#e54746"
                         android:text="¥2700"
                         />
 
@@ -81,6 +89,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:textSize="@dimen/dimen_text_size_16"
+                        android:textColor="#39aea8"
                         android:text="费用明细"
                         />
                 </LinearLayout>
@@ -95,6 +105,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textSize="@dimen/dimen_text_size_16"
+                        android:textColor="@color/text_color_light"
                         android:text="订单号"
                         />
 
@@ -102,6 +114,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="25dp"
+                        android:textSize="@dimen/dimen_text_size_16"
+                        android:textColor="@color/text_color_dark"
                         android:layout_weight="1"
                         android:text="17899288746"
                         />
@@ -111,6 +125,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
+                    android:textSize="@dimen/dimen_text_size_18"
+                    android:textColor="#39aea8"
                     android:text="使用条件说明"
                     />
 
@@ -121,16 +137,20 @@
 
                     <Button
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_weight="1"
+                        android:textColor="#39aea8"
+                        android:background="@mipmap/juxing_xiantiao"
                         android:text="取消订单"
                         />
 
                     <Button
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_marginLeft="50dp"
+                        android:background="@mipmap/quzhifu"
                         android:layout_weight="1"
+                        android:textColor="@color/color_white"
                         android:text="立即付款"
                         />
                 </LinearLayout>
@@ -156,6 +176,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="乘机人信息"
+                        android:textColor="@color/text_color_dark"
                         android:textSize="@dimen/dimen_text_size_18"
                         />
 
@@ -180,6 +201,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="乘机人"
+                                android:textColor="@color/text_color_light"
                                 android:textSize="@dimen/dimen_text_size_16"
                                 />
 
@@ -187,6 +209,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="end"
+                                android:textColor="@color/text_color_dark"
                                 android:text="阿狸"
                                 android:textSize="@dimen/dimen_text_size_16"
                                 />
@@ -204,6 +227,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="证件号码"
+                                android:textColor="@color/text_color_light"
                                 android:textSize="@dimen/dimen_text_size_16"
                                 />
 
@@ -211,6 +235,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="end"
+                                android:textColor="@color/text_color_dark"
                                 android:text="身份证/51010*********2999"
                                 android:textSize="@dimen/dimen_text_size_16"
                                 />
@@ -228,6 +253,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="其他"
+                                android:textColor="@color/text_color_light"
                                 android:textSize="@dimen/dimen_text_size_16"
                                 />
 
@@ -236,6 +262,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="end"
                                 android:text="航空意外险1份"
+                                android:textColor="@color/text_color_dark"
                                 android:textSize="@dimen/dimen_text_size_16"
                                 />
 
@@ -257,6 +284,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="联系手机"
+                            android:textColor="@color/text_color_light"
                             android:textSize="@dimen/dimen_text_size_16"
                             />
 
@@ -285,6 +313,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="行程单"
+                        android:textColor="@color/text_color_dark"
                         android:textSize="@dimen/dimen_text_size_18"
                         />
 
@@ -309,6 +338,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="收件人"
+                                android:textColor="@color/text_color_light"
                                 android:textSize="@dimen/dimen_text_size_16"
                                 />
 
@@ -317,6 +347,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="end"
                                 android:text="阿狸"
+                                android:textColor="@color/text_color_dark"
                                 android:textSize="@dimen/dimen_text_size_16"
                                 />
 
@@ -333,6 +364,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="联系电话"
+                                android:textColor="@color/text_color_light"
                                 android:textSize="@dimen/dimen_text_size_16"
                                 />
 
@@ -341,6 +373,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="end"
                                 android:text="166356647777"
+                                android:textColor="@color/text_color_dark"
                                 android:textSize="@dimen/dimen_text_size_16"
                                 />
 
@@ -357,6 +390,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="地址"
+                                android:textColor="@color/text_color_light"
                                 android:textSize="@dimen/dimen_text_size_16"
                                 />
 
@@ -364,6 +398,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="end"
+                                android:textColor="@color/text_color_dark"
                                 android:text="四川省成都市高新国际广场B座307"
                                 android:textSize="@dimen/dimen_text_size_16"
                                 />
@@ -388,6 +423,7 @@
                             android:layout_height="wrap_content"
                             android:paddingBottom="10dp"
                             android:text="快递单号"
+                            android:textColor="@color/text_color_light"
                             android:textSize="@dimen/dimen_text_size_16"
                             />
 
@@ -406,6 +442,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
+                        android:textColor="@color/text_color_light"
                         android:text="行程单在订单完成后5天内为您寄送,快递单号可在寄送后查询"
                         android:textSize="@dimen/dimen_text_size_16"
                         />

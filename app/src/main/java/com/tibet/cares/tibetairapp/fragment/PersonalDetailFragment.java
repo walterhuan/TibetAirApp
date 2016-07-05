@@ -1,10 +1,12 @@
 package com.tibet.cares.tibetairapp.fragment;
 
+import android.view.View;
 import android.widget.TextView;
 
 import com.tibet.cares.tibetairapp.R;
 import com.tibet.cares.tibetairapp.activity.MeCommonActivity;
 import com.tibet.cares.tibetairapp.common.BaseFragment;
+import com.tibet.cares.tibetairapp.ui.SelectPhotoPopup;
 
 import butterknife.Bind;
 import butterknife.OnClick;
@@ -36,9 +38,25 @@ public class PersonalDetailFragment extends BaseFragment {
 
     }
 
-    @OnClick(R.id.ll_modify_personal_info)
-    public void onClick() {
-        ((MeCommonActivity)getActivity()).selectFragment(MODIFY_PERSONAL_INFO);
+    @OnClick({R.id.ll_modify_personal_info,R.id.ll_select_photo})
+    public void onClick(View view) {
+        switch(view.getId()){
+            case R.id.ll_modify_personal_info:
+
+                ((MeCommonActivity)getActivity()).selectFragment(MODIFY_PERSONAL_INFO);
+
+
+                break;
+
+            case R.id.ll_select_photo:
+
+                SelectPhotoPopup selectPhotoPopup = new SelectPhotoPopup(getActivity());
+                selectPhotoPopup.showPopupWindow();
+
+                break;
+
+        }
+
 
 
     }

@@ -17,9 +17,9 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@mipmap/bg_login"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/touxiang"
             />
         <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
         <!--app:civ_border_width="2dp"-->
@@ -38,24 +38,26 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
                 android:text="阿狸"
-                android:textSize="@dimen/dimen_text_size_18"
+                android:textSize="17sp"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
                 android:text="西藏航空欢迎你"
-                android:textSize="@dimen/dimen_text_size_16"
+                android:textSize="15sp"
                 />
 
         </LinearLayout>
 
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:background="@mipmap/ic_launcher"
+            android:background="@mipmap/arrow_right"
 
             />
 
@@ -73,17 +75,21 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="5dp"
+            android:id="@+id/ll_Propose_Paying"
             android:orientation="vertical"
             >
-            <ImageButton
+            <ImageView
                 android:id="@+id/imgBtn_Propose_Paying"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/daifukuan"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/dimen_text_size_14"
                 android:text="待付款"
                 />
 
@@ -99,13 +105,16 @@
             android:orientation="vertical"
             >
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/daichuxing"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/dimen_text_size_14"
+                android:layout_marginTop="5dp"
                 android:text="待出行"
                 />
 
@@ -121,13 +130,16 @@
             android:orientation="vertical"
             >
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/lishidingdan"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/dimen_text_size_14"
+                android:layout_marginTop="5dp"
                 android:text="历史订单"
                 />
 
@@ -146,6 +158,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/bg_listview"
+        android:paddingTop="3dp"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:orientation="vertical"
@@ -161,14 +174,15 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
                 android:textSize="@dimen/dimen_text_size_18"
                 android:text="常用乘机人"
                 />
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow_right"
                 />
 
 
@@ -185,14 +199,15 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
                 android:textSize="@dimen/dimen_text_size_18"
                 android:text="退票查询"
                 />
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow_right"
                 />
 
 
@@ -208,14 +223,15 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
                 android:textSize="@dimen/dimen_text_size_18"
                 android:text="设置"
                 />
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow_right"
                 />
 
 

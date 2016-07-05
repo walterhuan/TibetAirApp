@@ -8,6 +8,7 @@
     <include layout="@layout/common_top"/>
 
     <LinearLayout
+        android:id="@+id/ll_select_photo"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="10dp"
@@ -22,7 +23,7 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@mipmap/bg_login"
+            android:src="@mipmap/touxiang"
             />
 
         <TextView
@@ -30,14 +31,15 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_weight="1"
+            android:textColor="@color/text_color_dark"
             android:text="选择头像"
             android:textSize="@dimen/dimen_text_size_16"
             />
 
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right"
             />
 
     </LinearLayout>
@@ -64,6 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="姓        名"
+                android:textColor="@color/text_color_dark"
                 android:textSize="@dimen/dimen_text_size_16"
                 />
 
@@ -71,6 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="end"
+                android:textColor="@color/text_color_dark"
                 android:text="阿狸"
                 android:textSize="@dimen/dimen_text_size_16"
                 />
@@ -88,12 +92,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="性        别"
+                android:textColor="@color/text_color_dark"
                 android:textSize="@dimen/dimen_text_size_16"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark"
                 android:gravity="end"
                 android:text="男"
                 android:textSize="@dimen/dimen_text_size_16"
@@ -112,6 +118,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="证件类型"
+                android:textColor="@color/text_color_dark"
                 android:textSize="@dimen/dimen_text_size_16"
                 />
 
@@ -119,6 +126,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="end"
+                android:textColor="@color/text_color_dark"
                 android:text="身份证"
                 android:textSize="@dimen/dimen_text_size_16"
                 />
@@ -136,6 +144,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="证件号码"
+                android:textColor="@color/text_color_dark"
                 android:textSize="@dimen/dimen_text_size_16"
                 />
 
@@ -143,6 +152,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="end"
+                android:textColor="@color/text_color_dark"
                 android:text="510102930049039403"
                 android:textSize="@dimen/dimen_text_size_16"
                 />
@@ -160,6 +170,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="联系号码"
+                android:textColor="@color/text_color_dark"
                 android:textSize="@dimen/dimen_text_size_16"
                 />
 
@@ -167,6 +178,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="end"
+                android:textColor="@color/text_color_light"
                 android:text="19990029878"
                 android:textSize="@dimen/dimen_text_size_16"
                 />
@@ -183,6 +195,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="电子邮件"
+                android:textColor="@color/text_color_dark"
                 android:textSize="@dimen/dimen_text_size_16"
                 />
 
@@ -190,6 +203,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="end"
+                android:textColor="@color/text_color_dark"
                 android:text=""
                 android:textSize="@dimen/dimen_text_size_16"
                 />
@@ -218,14 +232,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@color/text_color_dark"
             android:text="个人信息修改"
             android:textSize="@dimen/dimen_text_size_16"
             />
 
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_right"
             />
 
     </LinearLayout>

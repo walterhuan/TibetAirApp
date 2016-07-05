@@ -15,7 +15,10 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/bg_listview"
         android:orientation="vertical"
-        android:padding="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         >
 
         <LinearLayout
@@ -29,7 +32,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="电子客票号"
-                android:textSize="@dimen/dimen_text_size_16"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/dimen_text_size_18"
                 />
 
             <EditText
@@ -53,7 +57,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="乘机人姓名"
-                android:textSize="@dimen/dimen_text_size_16"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/dimen_text_size_18"
                 />
 
             <EditText

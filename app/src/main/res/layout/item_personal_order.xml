@@ -3,7 +3,10 @@
               android:orientation="vertical"
               android:background="@drawable/bg_listview"
               android:layout_width="match_parent"
-              android:padding="15dp"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingTop="5dp"
+              android:paddingBottom="5dp"
               android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,33 +20,39 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="订单号: 192039029430"
-            android:textSize="@dimen/dimen_text_size_14"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/dimen_text_size_16"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="¥2700"
-            android:textSize="@dimen/dimen_text_size_16"
+            android:textColor="@color/text_color_dark"
+            android:textSize="@dimen/dimen_text_size_20"
             />
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_text_size_16"
         android:text="待付款"
+        android:textColor="#e54746"
         android:layout_gravity="end"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="拉萨 - 成都"
-        android:textSize="@dimen/dimen_text_size_16"
+        android:textColor="@color/text_color_dark"
+        android:textSize="@dimen/dimen_text_size_18"
         />
     <TextView
         android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="04/30 13:00-15:45"
-        android:textSize="@dimen/dimen_text_size_16"
+        android:textColor="@color/text_color_dark"
+        android:textSize="@dimen/dimen_text_size_18"
         />
     <View
         android:layout_width="match_parent"
@@ -55,20 +64,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         android:gravity="end"
         >
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
             android:focusable="false"
+            android:textColor="@color/text_color_dark"
+            android:background="@mipmap/juxing_xiantiao"
             android:text="取消订单"
             />
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
             android:focusable="false"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/color_white"
+            android:background="@mipmap/quzhifu"
             android:text="去支付"
             />
 
